@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/table.png");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+body, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+#message-el {
+    font-style: italic;
+}
+
+button {
+    border: none;
+    background-color: goldenrod;
+    color: green;
+    width: 8rem;
+    margin: auto;
+    padding: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
