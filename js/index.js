@@ -8,6 +8,14 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 
+/*let player = {
+    name: "Per",
+    chips: 145
+}
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips;*/
+
 function getRandomCard() {
     let randomNumber = Math.floor(Math.random() * 13) + 1;
 
@@ -62,40 +70,13 @@ function newCard() {
     }     
 }
 
-/*let hasCompletedCourse = false;
-let givesCertificate = false;
+function restartGame() {
+    cardsEl.textContent = "Cards: ";
+    sumEl.textContent = "Sum: ";
+    messageEl.textContent = "Want to play another round?";
 
-if (hasCompletedCourse === true && givesCertificate === true) {
-    generateCertificate();
-} else {
-    console.log("Try again next time!");
+    cards = 0;
+    sum = 0;
+    hasBlackjack = false;
+    isAlive = false;
 }
-
-function generateCertificate() {
-    console.log("Generating certificate...");
-}
-
-let hasSolvedChallenge = false;
-let hasHintsLeft = false;
-
-if (hasSolvedChallenge === false && hasHintsLeft === false){
-    showSolution();
-}
-
-
-function showSolution() {
-    console.log("Showing the solution...")
-}
-
-let likesDocumentaries = true;
-let likesStartups = false;
-
-if (likesDocumentaries === true || likesStartups === true) {
-    recommendMovie();
-}
-
-function recommendMovie() {
-    console.log("Hey, check out this new film we think you will like!")
-}*/
-
-
